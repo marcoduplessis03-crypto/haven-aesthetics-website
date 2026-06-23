@@ -6,7 +6,7 @@ HAVEN AESTHETICS WEBSITE - GO LIVE STEPS
    index.html
    styles.css
    script.js
-   assets folder
+   assets folder with logo files and treatment images
 
 4. In the VS Code terminal, run:
    git status
@@ -36,3 +36,15 @@ HAVEN AESTHETICS WEBSITE - GO LIVE STEPS
    https://marcoduplessis03-crypto.github.io/haven-aesthetics-website/
 
 9. Hard refresh with Ctrl + F5.
+
+
+Treatment image files now included:
+   assets/hero-microneedling.jpg
+   assets/lashes.jpg
+   assets/microblading.jpg
+   assets/microneedling.jpg
+   assets/dermaplaning.jpg
+   assets/chemical-peel.jpg
+   assets/treatment-room.jpg
+
+If the live site still shows old images, hard refresh with Ctrl + F5 or wait a few minutes for GitHub Pages to update.

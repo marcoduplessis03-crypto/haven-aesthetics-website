@@ -7,7 +7,7 @@ Premium static website for Haven Aesthetics in Constantia Park, Pretoria.
 - `index.html` - main website page
 - `styles.css` - full responsive styling
 - `script.js` - mobile navigation and opening-hours helper
-- `assets/` - Haven logo assets, favicon, social preview, and website package preview
+- `assets/` - Haven logo assets, favicon, social preview, website package preview, and local treatment images
 - `site.webmanifest`, `robots.txt`, `sitemap.xml` - basic site metadata
 
 ## Important folder structure
@@ -29,7 +29,14 @@ haven-aesthetics-website/
    ├─ haven-logo-wordmark-taupe.png
    ├─ haven-logo-wordmark-cream.png
    ├─ social-preview.png
-   └─ haven-website-package-preview.png
+   ├─ haven-website-package-preview.png
+   ├─ hero-microneedling.jpg
+   ├─ lashes.jpg
+   ├─ microblading.jpg
+   ├─ microneedling.jpg
+   ├─ dermaplaning.jpg
+   ├─ chemical-peel.jpg
+   └─ treatment-room.jpg
 ```
 
 The `assets` folder must be in the same place as `index.html` or the images will not load.
@@ -91,3 +98,18 @@ After pushing changes, hard refresh the website with **Ctrl + F5**.
 ## Booking link
 
 All Book Now buttons currently link to the Haven Aesthetics Fresha booking page.
+
+
+## Image update
+
+The website now uses local treatment-specific assets instead of generic spa-style stock images. These files are inside the `assets` folder and are referenced directly by `index.html`:
+
+- `hero-microneedling.jpg`
+- `lashes.jpg`
+- `microblading.jpg`
+- `microneedling.jpg`
+- `dermaplaning.jpg`
+- `chemical-peel.jpg`
+- `treatment-room.jpg`
+
+When committing updates, make sure the full `assets` folder is pushed to GitHub.
