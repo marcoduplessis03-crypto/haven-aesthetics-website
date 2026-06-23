@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs><linearGradient id="g" x1="8" x2="56" y1="8" y2="56"><stop stop-color="#E7C5B8"/><stop offset=".55" stop-color="#C98576"/><stop offset="1" stop-color="#9AA88F"/></linearGradient></defs>
+  <circle cx="32" cy="32" r="30" fill="url(#g)"/>
+  <text x="32" y="41" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#fff">HA</text>
+</svg>

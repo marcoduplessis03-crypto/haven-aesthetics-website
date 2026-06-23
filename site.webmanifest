@@ -1,0 +1,11 @@
+{
+  "name": "Haven Aesthetics",
+  "short_name": "Haven",
+  "theme_color": "#f6eee8",
+  "background_color": "#fbf6f0",
+  "display": "standalone",
+  "icons": [
+    {"src": "assets/favicon.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "assets/haven-logo-square.png", "sizes": "1254x1254", "type": "image/png"}
+  ]
+}

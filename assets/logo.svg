@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">Haven Aesthetics logo</title>
+  <desc id="desc">Elegant HA monogram inside a soft circular mark.</desc>
+  <defs>
+    <linearGradient id="g" x1="16" x2="104" y1="14" y2="106" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7C5B8"/>
+      <stop offset="0.53" stop-color="#C98576"/>
+      <stop offset="1" stop-color="#9AA88F"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="55" fill="url(#g)"/>
+  <circle cx="60" cy="60" r="45" fill="none" stroke="rgba(255,255,255,.75)" stroke-width="2"/>
+  <text x="60" y="72" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="white" letter-spacing="-3">HA</text>
+  <path d="M25 35c13-15 57-15 70 0" fill="none" stroke="white" stroke-opacity=".65" stroke-width="2" stroke-linecap="round"/>
+</svg>
