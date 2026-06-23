@@ -1,55 +1,93 @@
 # Haven Aesthetics Website
 
-A self-hosted premium landing page for Haven Aesthetics in Constantia Park, Pretoria.
+Premium static website for Haven Aesthetics in Constantia Park, Pretoria.
 
 ## What is included
 
-- Responsive one-page website
-- Premium luxury visual theme with subtle gold accents
-- Navigation tabs: About, Services, Skincare, Reviews, Contact Us
-- Prominent Book Now buttons linked to Fresha
-- Expanded skincare education section
-- Reviews, opening hours, address and Instagram links
-- SEO meta tags and local business schema
-- Integrated Haven Aesthetics logo assets in the header, hero, final CTA, footer, favicon and social preview
-- Brand-kit logo files in `assets/` for future use: transparent taupe, transparent cream, transparent gold, solid card, square icon and AI-generated alternatives
-- Free stock image links from Unsplash, ready to replace with real Haven Aesthetics images
+- `index.html` - main website page
+- `styles.css` - full responsive styling
+- `script.js` - mobile navigation and opening-hours helper
+- `assets/` - Haven logo assets, favicon, social preview, and website package preview
+- `site.webmanifest`, `robots.txt`, `sitemap.xml` - basic site metadata
 
-## How to upload to GitHub Pages
+## Important folder structure
 
-1. Create a GitHub repository, for example `haven-aesthetics-website`.
-2. Upload the contents of this folder, not the ZIP file.
-3. Make sure `index.html` is in the repository root.
-4. Go to `Settings > Pages`.
-5. Set source to `Deploy from a branch`.
-6. Select `main` and `/root`, then save.
+Your GitHub repository should look like this:
 
-The live link will appear on the Pages screen once GitHub finishes publishing.
+```text
+haven-aesthetics-website/
+├─ index.html
+├─ styles.css
+├─ script.js
+├─ README.md
+├─ site.webmanifest
+├─ robots.txt
+├─ sitemap.xml
+└─ assets/
+   ├─ favicon.png
+   ├─ haven-logo-card.png
+   ├─ haven-logo-wordmark-taupe.png
+   ├─ haven-logo-wordmark-cream.png
+   ├─ social-preview.png
+   └─ haven-website-package-preview.png
+```
 
-## How to update images
+The `assets` folder must be in the same place as `index.html` or the images will not load.
 
-The website currently uses remote stock images from Unsplash. To use Haven's real work:
+## How to update GitHub from VS Code
 
-1. Add image files into the `assets` folder.
-2. Replace the image URLs in `index.html` with paths like `assets/lashes-before-after.jpg`.
-3. Commit the changes to GitHub.
+Open PowerShell inside the website folder, then run:
+
+```powershell
+git status
+git add .
+git commit -m "Update Haven Aesthetics website assets"
+git push
+```
+
+If this is a new local folder and Git is not initialized yet, run:
+
+```powershell
+git init
+git branch -M main
+git add .
+git commit -m "Initial Haven Aesthetics website"
+git remote add origin https://github.com/marcoduplessis03-crypto/haven-aesthetics-website.git
+git push -u origin main
+```
+
+If GitHub rejects because the remote already has files, use:
+
+```powershell
+git fetch origin
+git push -u origin main --force-with-lease
+```
+
+If it still rejects and this repo is only for the Haven website, use:
+
+```powershell
+git push -u origin main --force
+```
+
+## How to make it live with GitHub Pages
+
+1. Open the GitHub repository.
+2. Go to **Settings**.
+3. Open **Pages**.
+4. Under **Build and deployment**, choose:
+   - Source: **Deploy from a branch**
+   - Branch: **main**
+   - Folder: **/root**
+5. Click **Save**.
+6. Wait 1-2 minutes.
+7. Visit:
+
+```text
+https://marcoduplessis03-crypto.github.io/haven-aesthetics-website/
+```
+
+After pushing changes, hard refresh the website with **Ctrl + F5**.
 
 ## Booking link
 
-All booking buttons currently point to:
-
-https://www.fresha.com/a/haven-aesthetics-pretoria-541-chopin-street-nnjnbvdv?pId=1398419
-
-
-## Logo assets included
-
-The updated site uses these new files:
-
-- `assets/haven-logo-wordmark-taupe.png` — header, hero and CTA wordmark
-- `assets/haven-logo-wordmark-cream.png` — footer wordmark
-- `assets/haven-logo-card.png` — premium logo card used in the hero
-- `assets/haven-logo-square.png` — app/social icon
-- `assets/favicon.png` — browser tab icon
-- `assets/social-preview.png` — image shown when the website link is shared
-
-Optional generated variants are also included in the `assets` folder and can be swapped in later if you want a different logo treatment.
+All Book Now buttons currently link to the Haven Aesthetics Fresha booking page.
